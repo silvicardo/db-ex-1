@@ -5,13 +5,13 @@ eta -> TINYINT (intero positivo probabilmente compreso tra 15 e 40) | NOTNULL
 punteggioMedio -> TINYINT (intero positivo probabilmente compreso tra 15 e 40) | NULL (interessante per valutare il giocatore ma non fondamentale ai fini di un primo inserimento)
 mediaPuntiDa3 -> TINYINT (intero positivo impossibile raggiungere 127 tiri da 3 riusciti in una partita) | NULL (inseribile in un secondo momento)
 mediaPuntiDa2 -> TINYINT (intero positivo impossibile raggiungere 127 tiri da 2 riusciti in una partita) | NULL (inseribile in un secondo momento)
-partiteGiocate -> SMALLINT (intero positivo, possibilmente superiore di 127, non raggiungerà mai 65535) | NOTNULL (troppo importante per valutare l'esperienza del giocatore)
+partiteGiocate -> SMALLINT (intero positivo, possibilmente superiore di 127, non raggiungerà mai 65535) | NULL ( importante per valutare l'esperienza del giocatore, ma accettabile non inserirlo da subito)
 haSquadra -> TINYINT (per rappresentare true/false) | NULL(interessante ma non fondamentale sapere se è 'impiegato')
 squadra -> VARCHAR(30) (nomeSquadra inferiore a 30 caratteri) | NULL(possibile che non la abbia)
 eSano -> TINYINT (per rappresentare true/false) | DEFAULT(1)(interessante per sapere se è attualmente infortunato ma non fondamentale al primo inserimento, con default(vero) aiutiamo l'utente considerando irrilevante il segnalare uno stato di non infortunio)
 infortuni -> TINYINT (impossibile arrivare a 127 infortuni, sarebbe troppo perseverante il giocatore)  NULL (interessante per valutare il giocatore ma non fondamentale ai fini di un primo inserimento)
 campionatiVinti -> TINYINT (impossibile arrivare a 127 campionati) | NULL (interessante per valutare il giocatore ma non fondamentale ai fini di un primo inserimento)
-mancino -> TINYINT (per rappresentare true/false) |  NULL (interessante per valutare il giocatore ma non fondamentale ai fini di un primo inserimento)
+mancino -> TINYINT (per rappresentare true/false) | NULL (interessante per valutare il giocatore ma non fondamentale ai fini di un primo inserimento)
 
 
 
