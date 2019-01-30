@@ -1,0 +1,17 @@
+id -> Primary key ( AUTO_INCREMENT, UNIQUE)
+nomeCompleto -> VARCHAR(50) (nome cognome inferiore a 50 caratteri)
+dataDiNascita -> DATE (YYYY-MM-GG)
+eta -> TINYINT (intero positivo probabilmente compreso tra 15 e 40)
+punteggioMedio -> TINYINT (intero positivo probabilmente compreso tra 15 e 40)
+mediaPuntiDa3 -> TINYINT (intero positivo impossibile raggiungere 127 tiri da 3 riusciti in una partita)
+mediaPuntiDa2 -> INYINT (intero positivo impossibile raggiungere 127 tiri da 2 riusciti in una partita)
+partiteGiocate -> SMALLINT (intero positivo, possibilmente superiore di 127, non raggiungerà mai 65535)
+squadra -> VARCHAR(30) (nomeSquadra inferiore a 30 caratteri)
+infortuni -> TINYINT (impossibile arrivare a 127 infortuni, sarebbe troppo perseverante il giocatore)
+campionatiVinti -> TINYINT (impossibile arrivare a 127 campionati)
+mancino -> TINYINT (per rappresentare true/false)
+
+
+
+
+

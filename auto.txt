@@ -1,0 +1,27 @@
+id -> Primary key ( AUTO_INCREMENT, UNIQUE)
+marca -> VARCHAR(30) (marca inferiore a 30 caratteri)
+nomeSerie -> VARCHAR(30) (nome serie inferiore a 30 caratteri)
+modello -> VARCHAR(50) (modello inferiore a 50 caratteri)
+colore -> VARCHAR(30) (colore inferiore a 30 caratteri)
+cavalli -> TINYINT (impossibile arrivare a 127)
+cilindrata -> TINYINT (impossibile arrivare a 127)
+carburante -> TINYINT (sarebbe interessante identificare un numero da 1 a 4 come diesel, benzina, metano, gpl altrimenti VARCHAR(10) a stare larghi)
+anno -> YEAR
+kmPercorsi -> SMALLINT (probabilmente superiore a 127 ma sicuramente inferiore a 65535)
+categoria -> VARCHAR(25) (nomeCategoria inferiore a 25 caratteri)
+porte -> TINYINT (impossibile arrivare a 127)
+ruote -> TINYINT (impossibile arrivare a 127)
+peso -> SMALLINT (in kg, sicuramente superiore a 127 ma sicuramente inferiore a 65535)
+trazione -> TINYINT (sarebbe interessante identificare un numero da 1 a 3 come anteriore, posteriore, integrale altrimenti VARCHAR(12) per stare in sicurezza)
+posti -> TINYINT (impossibile arrivare a 127)
+capienzaBagagliaio -> SMALLINT (in lt, probabilmente superiore a 127 ma sicuramente inferiore a 65535)
+fullOptional -> TINYINT (per rappresentare true/false)
+prontaAllaVendita -> TINYINT (per rappresentare true/false)
+prezzoListino -> MEDIUMINT (in €, sicuramente superiore a 127 e possibilimente superiore a 65535)
+scontoMassimo -> TINYINT (in percentuale, sicuramente inferiore a 127)
+
+
+
+
+
+
